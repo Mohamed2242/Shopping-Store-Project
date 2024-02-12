@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="Home.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+    <div class="btn">
+        <span class="fas fa-bars"></span>
+    </div>
+    <nav class="sidebar">
+        <div class="text">
+            Main Menu
+        </div>
+        <ul>
+            <li class="active"><a href="Home.html">Home</a></li>
+            <li><a href="Trending.html">Trending</a></li>
+            <li>
+                <a href="#" class="feat-btn">
+                   Categories
+                    <span class="fas fa-caret-down first"></span>
+                </a>
+                <ul class="feat-show">
+                    <li><a href="Perfumes.html">Perfumes</a></li>
+                    <li><a href="Laptops.html">Laptops</a></li>
+                    <li><a href="TV’s.html">TV’s</a></li>
+                    <li><a href="Mobiles.html">Mobiles</a></li>
+                    <li><a href="Watches.html">Watches</a></li>
+                    <li><a href="T-shirts.html">Clothes</a></li>
+                    <li><a href="Shoes.html">Shoes</a></li>
+                    <li><a href="Furniture.html">Furniture</a></li>
+
+                </ul>
+            </li>
+            
+            <li>
+                <a href="#" class="serv-btn">
+                    Done By
+                    <span class="fas fa-caret-down second"></span>
+                </a>
+                <ul class="serv-show">
+                    <li><a href="#">Mohamed Ahmed</a></li>
+                    <li><a href="#">Abd Allah Ashraf</a></li>
+                    <li><a href="#">Abd ElRahman Emad</a></li>
+                    <li><a href="#">Ahmed Mohamed</a></li>
+                    <li><a href="#">Abd ElRahman Hesham</a></li>
+                    <li><a href="#">Mohamed Gomaa</a></li>
+                    <li><a href="#">Mohamed Ayman</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <script>
+        $('.btn').click(function () {
+            $(this).toggleClass("click");
+            $('.sidebar').toggleClass("show");
+        });
+        $('.feat-btn').click(function () {
+            $('nav ul .feat-show').toggleClass("show");
+            $('nav ul .first').toggleClass("rotate");
+        });
+        $('.serv-btn').click(function () {
+            $('nav ul .serv-show').toggleClass("show1");
+            $('nav ul .second').toggleClass("rotate");
+        });
+        $('nav ul li').click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+    </script>
+
+<header>
+    <div id="navlist">
+
+        <a id="name" style="float: right; padding: right 50px; ;" href="login.html">Sign in</a>
+      <div id="name2" style="display: none;">
+        <button onclick="logout()" class="admin " style= "padding: 0px; border: none; background: transparent; "><img class="admin logout" src="log.png"title="Logout" style="  width: 50px;"></button>
+         <p id="name1"></p>
+         
+      </div>
+       <a id="dash"href="dashboard.html" style="display: none;margin-left: 60px;">Dashboard</a>
+
+        <!-- search bar right align -->
+        <div class="search">
+            <form action="https://www.google.com/search">
+                <input type="text"
+                    placeholder=" search for anything"
+                    name="search">
+                <button>
+                    <i class="fa fa-search">
+                    </i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+</header>
+
+<section class="sec-1">
+    <div class="container">
+        <div class="container-1">
+            <div class="para">
+                <p> All Categories</p>
+            </div>
+            <div class="product-comp">
+                <div class="box-a">
+                    <a href="TV’s.html">
+                        <div class="cont">
+                            <div class="i">
+                            <img  class="wh" class="image" src="pngfind.com-samsung-led-tv-png-1456893.png" alt="">
+                            </div>
+                          <div class="middle">
+                           <div class="text">TV’s</div> 
+                          </div>
+                        </div>
+                    </a>
+                    <a href="Laptops.html">
+                        <div class="cont">
+                            <div class="i">
+                            <img  class="wh" class="image" src="pngfind.com-laptop-png-603470.png" alt="">
+                            </div> 
+                          <div class="middle">
+                           <div class="text">Laptops</div> 
+                          </div>
+                        </div>
+                    </a>
+
+                    <a href="Watches.html">
+                        <div class="cont">
+                            <div class="i">
+                            <img  class="wh" class="image" src="watches2.png" alt="">
+                            </div>
+                          <div class="middle">
+                           <div class="text">Watches</div> 
+                          </div>
+                        </div>
+                    </a>
+                    <a href="Furniture.html">
+                        <div class="cont">
+                            <div class="i">
+                            <img  class="wh" class="image" src="toppng.com-furniture-719x314.png" alt="">
+                            </div>
+                          <div class="middle">
+                           <div class="text">Furniture</div> 
+                          </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-comp">
+                <div class="box-a">
+
+                    <a href="Shoes.html">
+                        <div class="cont">
+                            <div class="i">
+                            <img  class="wh" class="image" src="PngItem_1753350.png" alt="">
+                            </div>
+                          <div class="middle">
+                           <div class="text">Shoes</div> 
+                          </div>
+                        </div>
+                    </a>
+
+                    <a href="Perfumes.html">
+                        <div class="cont">
+                            <div class="i">
+                            <img  class="pm" class="image" src="pngegg.png" alt="">
+                            </div>
+                          <div class="middle">
+                           <div class="text">Perfumes</div> 
+                          </div>
+                        </div>
+                    </a>
+
+                    <a href="Mobiles.html">
+                        <div class="cont">
+                            <div class="i">
+                            <img  class="pm" class="image" src="61d2f93392b57c0004c64747.png" alt="">
+                            </div>
+                          <div class="middle">
+                           <div class="text">Mobiles</div> 
+                          </div>
+                        </div>
+                    </a>
+
+                    <a href="T-shirts.html">
+                        <div class="cont">
+                            <div class="i">
+                            <img  class="wh" class="image" src="clothes.png" alt="">
+                            </div>
+                          <div class="middle">
+                           <div class="text">Clothes</div> 
+                          </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="image-box">
+                <div class="slide">
+                    <img src="https://m.media-amazon.com/images/I/61jovjd+f9L._SX3000_.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://m.media-amazon.com/images/I/61DUO0NqyyL._SX3000_.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://m.media-amazon.com/images/I/71qid7QFWJL._SX3000_.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://m.media-amazon.com/images/I/6138dCMwqPL._SX3000_.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <a href="file:///C:/Users/lenovo/OneDrive/Desktop/web%20page/Home.html">
+    <div class="backtop">
+        <span>Back to Top</span>
+    </div></a>
+    <div class="details">
+        <div class="table">
+            <div>
+                <div class="t-head">Get to know us</div>
+                <ul>
+                    <li>Careers</li>
+                    <li>Blog</li>
+                    <li>About Shopping page</li>
+                    <li>Shopping Science</li>
+                </ul>
+            </div>
+
+            <div>
+                <div class="t-head">Make Money with Us</div>
+                <ul>
+                    <li>Sell products on our page</li>
+                    <li>Sell on Shopping Business</li>
+                    <li>Sell apps on the page</li>
+                    <li>Advertise your products</li>
+                    <li>Sell-Puplish with Us</li>
+                    <li>Host a Shopping Hub</li>
+                </ul>
+            </div>
+            <div>
+                <div class="t-head">Shopping Payment Products</div>
+                <ul>
+                    <li>Shopping Business card</li>
+                    <li>Shop with Points</li>
+                    <li>Reload Your Balance</li>
+                </ul>
+            </div>
+            <div>
+                <div class="t-head">Let Us Help You</div>
+                <ul>
+                    <li>Shopping and COVID-19</li>
+                    <li>Your Account</li>
+                    <li>Your Orders</li>
+                    <li>Shipping Rates and Policies</li>
+                    <li>Returns and Replacements</li>
+                    <li>Manage Your Content and Devices</li>
+                    <li>Shopping Assistant</li>
+                    <li>Help</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="line"></div>
+            <div class="copy">
+            <span>&copy; Designed by</span><br>
+            <span>Mohamed Ahmed Mohamed Sayed // </span>
+            <span>Abdallah Ashraf Ahmed Sadek // </span>
+            <span>Abd Elrahman Emad Shamikh // </span>
+            <span>Mohamed Ayman Mohamed // </span>
+            <span>Mohamed Gomaa Abd Elmohsen // </span>
+            <span>Ahmed Mohamed Alaa El Din // </span>
+            <span>Abd Elrahman Hesham  </span>
+        </div>
+</section>
+<script>
+    
+    if (localStorage.getItem("login")!=="false") {
+        
+        var loginbtn1=document.getElementById("name");
+        var loginbtn2=document.getElementById("name2");
+loginbtn1.style.display="none";
+loginbtn2.style.display="block";
+        var loginbtn=document.getElementById("name1");
+        var dash=document.getElementById("dash");
+        loginbtn.className="admin"
+       var name=localStorage.getItem("name");
+       loginbtn.innerHTML=name;
+       if(localStorage.getItem("name")=="admin"){
+        dash.style.display="block";
+       }
+    }
+    function logout(){
+        localStorage.setItem("login","false");
+        location.reload();
+    }
+    </script>
+</body>
+</html>

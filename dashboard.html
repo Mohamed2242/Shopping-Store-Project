@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="master.css">
+    <title>Admin</title>
+
+</head>
+<body>
+    <header>
+        <div id="navlist">
+            <a href="Home.html" style="height: 37px;">Home</a>
+             
+            <!-- search bar right align -->
+            <div class="search">
+                <form action="#">
+                    <input type="text"
+                        placeholder=" categories"
+                        name="search">
+                    <button>
+                        <i class="fa fa-search">
+                        </i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <h1>
+        <div class="form">
+            <div class="de">
+            <input type="text" class="pname" placeholder="Product Name"/>
+            <input type="text" class="pde" placeholder="Product Details"/>
+            <input type="text" class="ppric" placeholder="Product Price"/>
+            <input type="text" class="imurl" placeholder="Image Url" />
+            </div>
+           
+            <input type="submit" class="add" value="Add Product " />
+        </div>
+    </h1>
+    <section>
+        
+        <div class="content">
+            <div class="products">
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
