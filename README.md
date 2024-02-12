@@ -2,7 +2,7 @@
 
 ## Description:
 
-- A web page that displays different categories on the home page and menu sidebar,
+- A web page that displays different categories on the home page and menu sidebar.
 - Make the user interact with the page and make the admin add and remove products.
 
 ### Technologies used:
